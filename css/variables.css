@@ -1,1 +1,351 @@
+/* ===========================================
+   CROSÁNT
+   VARIABLES GLOBALES
+=========================================== */
 
+/* ---------- COLORES ---------- */
+
+:root{
+
+    --ivory:#F8F4EE;
+    --white:#FFFFFF;
+    --black:#1D1D1B;
+
+    --bronze:#8B6A3D;
+    --olive:#4F5A47;
+
+    --gray-100:#F5F5F5;
+    --gray-200:#ECECEC;
+    --gray-300:#D8D8D8;
+    --gray-500:#9B9B9B;
+    --gray-700:#666666;
+
+    --overlay:rgba(0,0,0,.42);
+
+}
+
+
+/* ---------- TIPOGRAFÍA ---------- */
+
+:root{
+
+    --font-title:'Cormorant Garamond', serif;
+
+    --font-text:'Inter', sans-serif;
+
+}
+
+
+/* ---------- TAMAÑOS ---------- */
+
+:root{
+
+    --hero-title:6rem;
+
+    --title-xl:4rem;
+
+    --title-lg:3rem;
+
+    --title-md:2.2rem;
+
+    --title-sm:1.5rem;
+
+    --body-lg:1.25rem;
+
+    --body:1rem;
+
+    --small:.9rem;
+
+}
+
+
+/* ---------- PESOS ---------- */
+
+:root{
+
+    --light:300;
+
+    --regular:400;
+
+    --medium:500;
+
+    --semi:600;
+
+    --bold:700;
+
+}
+
+
+/* ---------- ESPACIADOS ---------- */
+
+:root{
+
+    --space-xs:10px;
+
+    --space-sm:20px;
+
+    --space-md:40px;
+
+    --space-lg:80px;
+
+    --space-xl:120px;
+
+    --space-xxl:180px;
+
+}
+
+
+/* ---------- CONTENEDOR ---------- */
+
+:root{
+
+    --container:1280px;
+
+}
+
+
+/* ---------- BORDES ---------- */
+
+:root{
+
+    --radius:0px;
+
+}
+
+
+/* ---------- TRANSICIONES ---------- */
+
+:root{
+
+    --transition:.35s ease;
+
+}
+
+
+/* ---------- SOMBRAS ---------- */
+
+:root{
+
+    --shadow-light:
+
+        0 8px 30px rgba(0,0,0,.05);
+
+    --shadow-card:
+
+        0 15px 40px rgba(0,0,0,.08);
+
+}
+
+
+/* ---------- HEADER ---------- */
+
+:root{
+
+    --header-height:90px;
+
+}
+
+
+/* ---------- BOTONES ---------- */
+
+:root{
+
+    --button-height:58px;
+
+}
+
+
+/* ---------- Z INDEX ---------- */
+
+:root{
+
+    --z-menu:1000;
+
+    --z-overlay:10;
+
+    --z-content:20;
+
+}
+
+
+/* ===========================================
+   RESET
+=========================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+body{
+
+    background:var(--ivory);
+
+    color:var(--black);
+
+    font-family:var(--font-text);
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+
+    -webkit-font-smoothing:antialiased;
+
+    text-rendering:optimizeLegibility;
+
+}
+
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+ul{
+
+    list-style:none;
+
+}
+
+
+button{
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+    border:none;
+
+    background:none;
+
+}
+
+
+/* ===========================================
+   CONTENEDOR
+=========================================== */
+
+.container{
+
+    width:min(92%,var(--container));
+
+    margin:auto;
+
+}
+
+
+/* ===========================================
+   TIPOGRAFÍA
+=========================================== */
+
+h1,h2,h3,h4{
+
+    font-family:var(--font-title);
+
+    font-weight:600;
+
+    line-height:1.05;
+
+    letter-spacing:-1px;
+
+}
+
+
+p{
+
+    color:var(--gray-700);
+
+}
+
+
+/* ===========================================
+   SECCIONES
+=========================================== */
+
+section{
+
+    padding:var(--space-xl) 0;
+
+}
+
+
+/* ===========================================
+   BOTÓN PRINCIPAL
+=========================================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px 40px;
+
+    margin-top:40px;
+
+    border:1px solid var(--black);
+
+    transition:var(--transition);
+
+    font-weight:500;
+
+    letter-spacing:.5px;
+
+}
+
+.btn:hover{
+
+    background:var(--black);
+
+    color:var(--white);
+
+}
+
+
+/* ===========================================
+   TÍTULOS
+=========================================== */
+
+.section-subtitle{
+
+    display:block;
+
+    color:var(--bronze);
+
+    letter-spacing:4px;
+
+    font-size:.8rem;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+
+}
