@@ -1,1 +1,298 @@
+/* ===========================================
+   RESPONSIVE
+   CROSÁNT
+=========================================== */
 
+/* =========================
+        DESKTOP LARGE
+========================= */
+
+@media (max-width:1400px){
+
+    .hero h1{
+
+        font-size:5.5rem;
+
+    }
+
+}
+
+/* =========================
+        TABLETS
+========================= */
+
+@media (max-width:992px){
+
+    header{
+
+        height:80px;
+
+    }
+
+    nav{
+
+        gap:25px;
+
+    }
+
+    .hero{
+
+        height:90vh;
+
+    }
+
+    .hero-content{
+
+        margin-left:6%;
+
+        width:88%;
+
+    }
+
+    .hero h1{
+
+        font-size:4rem;
+
+    }
+
+    .hero-text{
+
+        font-size:1.05rem;
+
+    }
+
+    h2{
+
+        font-size:3rem;
+
+    }
+
+    .concept-grid{
+
+        grid-template-columns:1fr;
+
+        gap:50px;
+
+    }
+
+    .cards{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+
+        text-align:center;
+
+    }
+
+}
+
+/* =========================
+        MÓVILES
+========================= */
+
+@media (max-width:768px){
+
+    header{
+
+        background:rgba(0,0,0,.45);
+
+        backdrop-filter:blur(10px);
+
+    }
+
+    .nav{
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        gap:15px;
+
+        padding:15px 0;
+
+    }
+
+    nav{
+
+        gap:18px;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    nav a{
+
+        font-size:.9rem;
+
+    }
+
+    .logo{
+
+        font-size:1.8rem;
+
+    }
+
+    .logo span{
+
+        font-size:.6rem;
+
+        letter-spacing:3px;
+
+    }
+
+    .hero{
+
+        height:100vh;
+
+        justify-content:center;
+
+        text-align:center;
+
+    }
+
+    .hero-content{
+
+        width:92%;
+
+        margin:0 auto;
+
+    }
+
+    .eyebrow{
+
+        letter-spacing:3px;
+
+        font-size:.7rem;
+
+    }
+
+    .hero h1{
+
+        font-size:3rem;
+
+        line-height:1.05;
+
+    }
+
+    .hero-text{
+
+        font-size:1rem;
+
+        margin:auto;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+        max-width:320px;
+
+    }
+
+    section{
+
+        padding:90px 0;
+
+    }
+
+    h2{
+
+        font-size:2.4rem;
+
+    }
+
+    .concept-grid{
+
+        gap:40px;
+
+    }
+
+    .cards{
+
+        grid-template-columns:1fr;
+
+        gap:30px;
+
+    }
+
+    .card h3{
+
+        font-size:1.7rem;
+
+    }
+
+    .atelier{
+
+        min-height:70vh;
+
+    }
+
+    .atelier-box{
+
+        width:90%;
+
+    }
+
+    .atelier-box p{
+
+        font-size:1rem;
+
+    }
+
+}
+
+/* =========================
+        TELÉFONOS PEQUEÑOS
+========================= */
+
+@media (max-width:480px){
+
+    .hero h1{
+
+        font-size:2.4rem;
+
+    }
+
+    h2{
+
+        font-size:2rem;
+
+    }
+
+    .hero-text{
+
+        font-size:.95rem;
+
+    }
+
+    .btn{
+
+        padding:16px 28px;
+
+    }
+
+    .section-subtitle{
+
+        font-size:.7rem;
+
+        letter-spacing:2px;
+
+    }
+
+    .copyright{
+
+        font-size:.75rem;
+
+    }
+
+}
