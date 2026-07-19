@@ -1,1 +1,557 @@
+/* ===========================================
+   CROSÁNT
+   STYLE.CSS
+=========================================== */
 
+/* =========================
+        HEADER
+========================= */
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:var(--header-height);
+
+    z-index:999;
+
+    transition:.35s;
+
+}
+
+.nav{
+
+    height:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    display:flex;
+
+    flex-direction:column;
+
+    font-family:var(--font-title);
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:white;
+
+    letter-spacing:2px;
+
+}
+
+.logo span{
+
+    font-family:var(--font-text);
+
+    font-size:.7rem;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    margin-top:2px;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:50px;
+
+}
+
+nav a{
+
+    color:white;
+
+    font-size:.95rem;
+
+    letter-spacing:1px;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:1px;
+
+    background:white;
+
+    transition:.3s;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+
+/* =========================
+        HERO
+========================= */
+
+.hero{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.hero img{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    z-index:1;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        rgba(0,0,0,.30),
+        rgba(0,0,0,.45)
+    );
+
+    z-index:2;
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:3;
+
+    color:white;
+
+    width:min(700px,90%);
+
+    margin-left:8%;
+
+    animation:fadeUp 1.2s ease;
+
+}
+
+.eyebrow{
+
+    color:white;
+
+    text-transform:uppercase;
+
+    letter-spacing:6px;
+
+    font-size:.75rem;
+
+    margin-bottom:30px;
+
+}
+
+.hero h1{
+
+    font-size:clamp(4rem,8vw,7rem);
+
+    line-height:.95;
+
+    margin-bottom:35px;
+
+}
+
+.hero-text{
+
+    font-size:1.2rem;
+
+    color:rgba(255,255,255,.88);
+
+    max-width:520px;
+
+    margin-bottom:40px;
+
+    line-height:1.8;
+
+}
+
+.hero .btn{
+
+    border:1px solid white;
+
+    color:white;
+
+}
+
+.hero .btn:hover{
+
+    background:white;
+
+    color:black;
+
+}
+
+/* =========================
+      SCROLL INDICATOR
+========================= */
+
+.scroll{
+
+    position:absolute;
+
+    bottom:40px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    color:white;
+
+    font-size:.8rem;
+
+    letter-spacing:4px;
+
+    z-index:5;
+
+}
+
+/* =========================
+      GENERAL TITLES
+========================= */
+
+h2{
+
+    font-size:4rem;
+
+    margin-bottom:35px;
+
+}
+
+.section-subtitle{
+
+    display:block;
+
+    margin-bottom:18px;
+
+    color:var(--bronze);
+
+    letter-spacing:4px;
+
+    font-size:.75rem;
+
+    text-transform:uppercase;
+
+}
+
+/* =========================
+        CONCEPTO
+========================= */
+
+.concepto{
+
+    background:var(--ivory);
+
+}
+
+.concept-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:90px;
+
+    align-items:center;
+
+}
+
+.concept-grid img{
+
+    border-radius:2px;
+
+    box-shadow:var(--shadow-card);
+
+}
+
+.concept-grid p{
+
+    font-size:1.05rem;
+
+    line-height:2;
+
+}
+
+/* =========================
+        COLLECTION
+========================= */
+
+.collection{
+
+    background:white;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+    margin-top:60px;
+
+}
+
+.card{
+
+    overflow:hidden;
+
+    background:white;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+.card img{
+
+    aspect-ratio:1/1;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.card h3{
+
+    margin-top:22px;
+
+    font-size:2rem;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* =========================
+        MAISON
+========================= */
+
+.atelier{
+
+    position:relative;
+
+    min-height:90vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+}
+
+.atelier img{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.atelier::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    z-index:1;
+
+}
+
+.atelier-box{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:720px;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.atelier-box h2{
+
+    color:white;
+
+}
+
+.atelier-box p{
+
+    color:rgba(255,255,255,.85);
+
+    font-size:1.15rem;
+
+}
+
+/* =========================
+        FOOTER
+========================= */
+
+footer{
+
+    background:#161616;
+
+    color:white;
+
+    padding:80px 0 30px;
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:40px;
+
+    align-items:start;
+
+}
+
+.footer-grid h3{
+
+    font-size:2rem;
+
+    margin-bottom:10px;
+
+}
+
+.footer-grid strong{
+
+    display:block;
+
+    margin-bottom:15px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    font-size:.8rem;
+
+}
+
+.footer-grid p{
+
+    color:rgba(255,255,255,.65);
+
+}
+
+.copyright{
+
+    margin-top:60px;
+
+    text-align:center;
+
+    color:rgba(255,255,255,.4);
+
+    font-size:.85rem;
+
+}
+
+/* =========================
+        ANIMATIONS
+========================= */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
