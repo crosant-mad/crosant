@@ -111,31 +111,69 @@
 
     .nav{
 
-        flex-direction:column;
+    display:flex;
 
-        justify-content:center;
+    justify-content:space-between;
 
-        gap:12px;
+    align-items:center;
 
-        padding:12px 0;
+    height:75px;
 
-    }
+}
 
-    nav{
+.menu-toggle{
 
-        gap:18px;
+    display:block;
 
-        flex-wrap:wrap;
+    color:white;
 
-        justify-content:center;
+}
 
-    }
+nav{
 
-    nav a{
+    position:fixed;
 
-        font-size:.9rem;
+    top:75px;
 
-    }
+    left:-100%;
+
+    width:100%;
+
+    height:calc(100vh - 75px);
+
+    background:#F8F4EE;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    align-items:center;
+
+    gap:35px;
+
+    padding-top:60px;
+
+    transition:.35s;
+
+}
+
+nav.active{
+
+    left:0;
+
+}
+
+nav a{
+
+    color:#1D1D1B !important;
+
+    font-size:1.2rem;
+
+    font-family:var(--font-title);
+
+}
 
     .logo{
 
