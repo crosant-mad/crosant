@@ -536,9 +536,11 @@ footer{
 
     grid-template-columns:repeat(3,1fr);
 
-    gap:40px;
+    gap:60px;
 
-    align-items:center;
+    align-items:start;
+
+    text-align:center;
 
 }
 
@@ -564,9 +566,13 @@ footer{
 
 }
 
-.footer-grid p{
+.footer-grid div{
 
-    color:rgba(255,255,255,.65);
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
 
 }
 
