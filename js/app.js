@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
             header.style.boxShadow = "0 10px 30px rgba(0,0,0,.08)";
 
             document.querySelector(".logo").style.color = "#1D1D1B";
+            document.querySelector(".menu-toggle").style.color="#1D1D1B";
 
             document.querySelectorAll("nav a").forEach(link => {
                 link.style.color = "#1D1D1B";
@@ -32,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
             header.style.boxShadow = "none";
 
             document.querySelector(".logo").style.color = "#FFFFFF";
+            document.querySelector(".menu-toggle").style.color="#FFFFFF";
 
             document.querySelectorAll("nav a").forEach(link => {
                 link.style.color = "#FFFFFF";
