@@ -366,9 +366,13 @@ h2{
 
 .card img{
 
-    aspect-ratio:1/1;
+    width:100%;
+
+    aspect-ratio:4/5;
 
     object-fit:cover;
+
+    object-position:center;
 
     transition:.5s;
 
