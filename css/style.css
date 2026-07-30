@@ -312,9 +312,13 @@ h2{
 
 .concept-grid img{
 
-    border-radius:2px;
+    width:100%;
 
-    box-shadow:var(--shadow-card);
+    height:720px;
+
+    object-fit:cover;
+
+    display:block;
 
 }
 
