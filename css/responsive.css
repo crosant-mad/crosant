@@ -103,7 +103,9 @@
 
         background:rgba(0,0,0,.45);
 
-        backdrop-filter:blur(10px);
+        backdrop-filter:blur(12px);
+
+        height:75px;
 
     }
 
@@ -113,9 +115,9 @@
 
         justify-content:center;
 
-        gap:15px;
+        gap:12px;
 
-        padding:15px 0;
+        padding:12px 0;
 
     }
 
@@ -137,7 +139,7 @@
 
     .logo{
 
-        font-size:1.8rem;
+        font-size:1.6rem;
 
     }
 
@@ -149,35 +151,41 @@
 
     }
 
+    /* HERO */
+
     .hero{
 
-        height:100vh;
+        height:100svh;
+
+        text-align:center;
 
         justify-content:center;
 
-        text-align:center;
+    }
+
+    .hero img{
+
+        width:100%;
+
+        height:100%;
+
+        object-fit:cover;
+
+        object-position:center center;
 
     }
 
     .hero-content{
 
-        width:92%;
+        width:90%;
 
         margin:0 auto;
 
     }
 
-    .eyebrow{
-
-        letter-spacing:3px;
-
-        font-size:.7rem;
-
-    }
-
     .hero h1{
 
-        font-size:3rem;
+        font-size:2.8rem;
 
         line-height:1.05;
 
@@ -201,39 +209,85 @@
 
     section{
 
-        padding:90px 0;
+        padding:80px 0;
 
     }
 
     h2{
 
-        font-size:2.4rem;
+        font-size:2.3rem;
 
     }
+
+    /* CONCEPTO */
 
     .concept-grid{
 
-        gap:40px;
+        grid-template-columns:1fr;
+
+        gap:35px;
 
     }
+
+    .concept-grid img{
+
+        width:100%;
+
+        height:380px;
+
+        object-fit:cover;
+
+        object-position:center;
+
+    }
+
+    /* CARDS */
 
     .cards{
 
         grid-template-columns:1fr;
 
-        gap:30px;
+        gap:28px;
+
+    }
+
+    .card img{
+
+        width:100%;
+
+        height:320px;
+
+        object-fit:cover;
+
+        object-position:center;
 
     }
 
     .card h3{
 
-        font-size:1.7rem;
+        font-size:1.8rem;
 
     }
 
+    /* MAISON */
+
     .atelier{
 
-        min-height:70vh;
+        height:500px;
+
+        min-height:500px;
+
+    }
+
+    .atelier img{
+
+        width:100%;
+
+        height:100%;
+
+        object-fit:cover;
+
+        object-position:center;
 
     }
 
@@ -246,6 +300,18 @@
     .atelier-box p{
 
         font-size:1rem;
+
+    }
+
+    /* FOOTER */
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+        gap:30px;
+
+        text-align:center;
 
     }
 
