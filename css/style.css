@@ -302,9 +302,9 @@ h2{
 
     display:grid;
 
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:55% 45%;
 
-    gap:90px;
+    gap:50px;
 
     align-items:center;
 
