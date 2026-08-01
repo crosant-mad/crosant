@@ -290,13 +290,13 @@ nav a{
 
     margin-top:40px;
 
-    padding:0 calc(50vw - 45%) 20px;
+    padding:0 calc(50vw - 47%) 20px;
 
     scroll-snap-type:x mandatory;
 
     scroll-behavior:smooth;
 
-    scroll-padding-inline:calc(50vw - 45%);
+    scroll-padding-inline:calc(50vw - 47%);
 
     -webkit-overflow-scrolling:touch;
 
@@ -304,9 +304,9 @@ nav a{
 
 .card{
 
-    flex:0 0 90%;
+    flex:0 0 94%;
 
-    min-width:90%;
+    min-width:94%;
 
     scroll-snap-align:center;
 
