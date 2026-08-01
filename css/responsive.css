@@ -274,10 +274,6 @@ nav a{
 
     }
 
-/* =========================
-        CARDS MOBILE
-========================= */
-
 .cards{
 
     display:flex;
@@ -286,17 +282,17 @@ nav a{
 
     overflow-y:hidden;
 
-    gap:18px;
+    gap:16px;
 
     margin-top:40px;
 
-    padding:0 calc(50vw - 47%) 20px;
+    padding:0 20px 20px 20px;
 
     scroll-snap-type:x mandatory;
 
     scroll-behavior:smooth;
 
-    scroll-padding-inline:calc(50vw - 47%);
+    scroll-padding-inline:20px;
 
     -webkit-overflow-scrolling:touch;
 
@@ -304,11 +300,11 @@ nav a{
 
 .card{
 
-    flex:0 0 94%;
+    flex:0 0 88%;
 
-    min-width:94%;
+    min-width:88%;
 
-    scroll-snap-align:center;
+    scroll-snap-align:start;
 
     scroll-snap-stop:always;
 
