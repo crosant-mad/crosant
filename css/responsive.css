@@ -274,13 +274,13 @@ nav a{
 
     }
 
+   /* =========================
+        CARDS MOBILE
+========================= */
+
 .cards{
 
     display:flex;
-
-    width:100vw;
-
-    margin-left:calc(50% - 50vw);
 
     overflow-x:auto;
 
@@ -290,6 +290,7 @@ nav a{
 
     margin-top:40px;
 
+    /* Ya no centramos la primera tarjeta */
     padding:0 20px 20px;
 
     scroll-snap-type:x mandatory;
@@ -304,9 +305,9 @@ nav a{
 
 .card{
 
-    flex:0 0 86vw;
+    flex:0 0 88vw;
 
-    min-width:86vw;
+    min-width:88vw;
 
     scroll-snap-align:start;
 
