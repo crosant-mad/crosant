@@ -282,21 +282,21 @@ nav a{
 
     display:flex;
 
-    overflow-x:auto;
+    width:100vw;
+    max-width:none;
 
+    margin-left:calc((100% - 100vw) / 2);
+    margin-top:40px;
+
+    overflow-x:auto;
     overflow-y:hidden;
 
     gap:16px;
 
-    margin-top:40px;
-
-    /* Ya no centramos la primera tarjeta */
     padding:0 20px 20px;
 
     scroll-snap-type:x mandatory;
-
     scroll-behavior:smooth;
-
     scroll-padding-left:20px;
 
     -webkit-overflow-scrolling:touch;
@@ -307,10 +307,11 @@ nav a{
 
     flex:0 0 88vw;
 
+    width:88vw;
     min-width:88vw;
+    max-width:88vw;
 
     scroll-snap-align:start;
-
     scroll-snap-stop:always;
 
 }
