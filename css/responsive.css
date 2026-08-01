@@ -304,9 +304,9 @@ nav a{
 
 .card{
 
-    flex:0 0 70%;
+    flex:0 0 95%;
 
-    min-width:70%;
+    min-width:95%;
 
     scroll-snap-align:center;
 
