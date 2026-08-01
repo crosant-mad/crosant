@@ -290,7 +290,7 @@ nav a{
 
     margin-top:40px;
 
-    padding:0 calc(50vw - 39%) 20px;
+    padding:0 calc(50vw - 45%) 20px;
 
     scroll-snap-type:x mandatory;
 
@@ -304,22 +304,26 @@ nav a{
 
 .card{
 
-    /* ESTA ES LA MEJORA */
-    flex:0 0 78%;
+    flex:0 0 90%;
 
-    min-width:78%;
+    min-width:90%;
 
     scroll-snap-align:center;
 
+    scroll-snap-stop:always;
+
 }
+
 
 .card img{
 
     width:100%;
 
-    aspect-ratio:1/1;
+    height:430px;
 
     object-fit:cover;
+
+    object-position:center;
 
 }
 
