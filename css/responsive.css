@@ -290,7 +290,8 @@ nav a{
 
     margin-top:40px;
 
-    padding:0 20px 20px;
+    /* ESTE ES EL PADDING NUEVO */
+    padding:0 calc(50vw - 39%) 20px;
 
     scroll-snap-type:x mandatory;
 
@@ -300,9 +301,10 @@ nav a{
 
 .card{
 
-    flex:0 0 82%;
+    /* ESTA ES LA MEJORA */
+    flex:0 0 78%;
 
-    min-width:82%;
+    min-width:78%;
 
     scroll-snap-align:center;
 
