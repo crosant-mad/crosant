@@ -274,6 +274,19 @@ nav a{
 
     }
 
+   /* Quitar animación de aparición en la colección móvil */
+
+.collection.hidden,
+.collection.show{
+
+    opacity:1 !important;
+
+    transform:none !important;
+
+    transition:none !important;
+
+}
+
    /* =========================
         CARDS MOBILE
 ========================= */
