@@ -488,14 +488,10 @@ nav a{
     HIDE SCROLLBAR
 ========================= */
 
-.cards::-webkit-scrollbar{
-
-    display:none;
-
-}
-
 .cards{
 
-    scrollbar-width:none;
+    overscroll-behavior-x:contain;
+
+    touch-action:pan-x;
 
 }
